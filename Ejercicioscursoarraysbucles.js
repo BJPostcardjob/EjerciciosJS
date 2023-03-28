@@ -32,12 +32,19 @@ n = 5 sum = 15
 n = 19 sum = 190
 */
 
-const cola = ['Sofia', 'David', 'Juan'];
-cola.push('Sara', 'Augustin');
-cola.shift();
-cola.push('Sara', 'Augustin');
-cola.shift();
-cola.splice(2, 0, 'Renata');
-cola.push('Elena');
+//P2
+let cola = ['Sofia', 'David', 'Juan'];
+console.log(cola);
 
-// Cola = es fila pero con traducción arcaica
+//p2
+cola.push('Sara', 'Augustin');
+cola.shift();
+console.log(cola); 
+
+//p3
+const indexDavid = cola.indexOf('David');
+cola.splice(indexDavid + 1, 0, 'Renata');
+cola.push('Elena');
+console.log(cola); 
+
+// Cola = fila = hilera
